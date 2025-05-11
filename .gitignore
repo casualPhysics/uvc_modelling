@@ -1,6 +1,6 @@
-# SpecStory explanation file
+# SpecStory files
 .specstory/
-.specstory/.what-is-this.md
+.specstory/**/*
 
 # Python virtual environment
 venv/

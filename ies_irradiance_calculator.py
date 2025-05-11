@@ -1,7 +1,6 @@
 import numpy as np
 from photompy import * 
 from scipy.interpolate import RegularGridInterpolator
-from ies_visualizer import IESVisualizer
 import os
 
 

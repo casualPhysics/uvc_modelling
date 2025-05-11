@@ -15,9 +15,16 @@ ies_render/
 
 # USHIO prerelease files
 USHIO_prerelease/
+USHIO_B1_(PRERELEASE_DATA).ies
 
 # Cursor and Jupyter files
 .cursorindexingignore
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Jupyter Notebook files
+*.ipynb
+
 # SpecStory explanation file
 .specstory/.what-is-this.md

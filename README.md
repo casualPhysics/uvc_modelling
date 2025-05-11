@@ -1,15 +1,7 @@
 # IES Irradiance Calculator
 
-This program calculates the average irradiance at a specified height in a room based on an IES file of a light fixture.
-
-## Requirements
-
-- Python 3.7 or higher
-- Required packages (install using `pip install -r requirements.txt`):
-  - numpy
-  - pandas
-  - scipy
-  - matplotlib
+This program calculates the average irradiance at a specified height in a room based on an IES file of a light fixture placed centrally in such a room. 
+This is used to sense check some calculations in my investigations on modelling far UVC in some rooms. 
 
 ## Setup
 
@@ -60,17 +52,23 @@ python ies_irradiance_calculator.py
 
 ## Output
 
-The program will output the average irradiance in lux at the specified height.
+The program will output the average irradiance in micro W / cm^2 across a flat surface at a specified height. 
 
 ## How it Works
 
-1. The program parses the IES file to extract the photometric data (candela values at different angles).
+1. The program parses the IES file to extract the photometric data (W / sterradians at different values of theta, phi in the diagram above).
 2. It creates an interpolator to estimate candela values at any angle.
 3. For each point in a grid at the specified height, it:
    - Calculates the distance and angles to the light fixture
    - Determines the candela value at those angles
    - Applies the inverse square law to calculate irradiance
 4. Finally, it averages the irradiance values across all points to get the average irradiance at that height.
+
+## Irradiance Calculation Geometry
+
+Below is a diagram showing the geometry and formula used for irradiance calculation at a given point:
+
+<img src="images/diagram.png" alt="Irradiance Calculation Geometry" width="400"/>
 
 ## Notes
 

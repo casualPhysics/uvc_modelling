@@ -19,3 +19,5 @@ USHIO_prerelease/
 # Cursor and Jupyter files
 .cursorindexingignore
 .ipynb_checkpoints/
+# SpecStory explanation file
+.specstory/.what-is-this.md

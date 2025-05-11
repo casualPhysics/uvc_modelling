@@ -105,7 +105,7 @@ class IrradianceCalculator:
 
 def main():
     try:
-        lampdict = read_ies_data('USHIO_B1_(PRERELEASE_DATA).ies')
+        lampdict = read_ies_data('your_file.ies')
         ies_data = lampdict['interp_vals']
 
         # Room dimensions and mounting height

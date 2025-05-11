@@ -1,0 +1,21 @@
+# SpecStory explanation file
+.specstory/
+.specstory/.what-is-this.md
+
+# Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IES render directory
+ies_render/
+
+# USHIO prerelease files
+USHIO_prerelease/
+
+# Cursor and Jupyter files
+.cursorindexingignore
+.ipynb_checkpoints/
